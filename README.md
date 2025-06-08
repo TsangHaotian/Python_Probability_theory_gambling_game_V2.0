@@ -7,6 +7,12 @@
 
 ## 🚨 核心功能
 
+### 运行界面
+
+![image](https://github.com/user-attachments/assets/807da92b-15a6-4000-8a16-963f27d487c1)
+![image](https://github.com/user-attachments/assets/8f8eb559-5b0b-44b7-957b-5d720407739e)
+
+
 
 ### 模拟系统
 - 资金余额实时计算
