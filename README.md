@@ -1,94 +1,85 @@
-# 赌博模拟警示程序 🎰⚠️
+# Gambling Simulation Warning Program 🎰⚠️
 
-![Python版本](https://img.shields.io/badge/Python-3.8%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-red)
+An educational gambling behavior simulator that demonstrates the dangers of gambling through real-time fund curves.
 
-一个具有教育意义的赌博行为模拟器，通过真实资金曲线展示赌博危害
+## 🚨 Core Features
 
-## 🚨 核心功能
-
-### 运行界面
+### Running Interface
 
 ![image](https://github.com/user-attachments/assets/807da92b-15a6-4000-8a16-963f27d487c1)
 ![image](https://github.com/user-attachments/assets/8f8eb559-5b0b-44b7-957b-5d720407739e)
 
+### Simulation System
+- Real-time balance calculation
+- Betting history tracking
+- Dynamic visualization of fund curves
+- Random win/loss probability simulation
 
+### Warning Functions
+- Warning messages displayed upon exit
+- Visual analysis of fund changes
+- Anti-gambling提示信息 (Anti-gambling tips)
+- Forced termination when balance reaches zero
 
-### 模拟系统
-- 资金余额实时计算
-- 下注历史记录追踪
-- 动态可视化资金曲线
-- 随机输赢概率模拟
-
-### 警示功能
-- 退出时显示警示语
-- 资金变化可视化分析
-- 反赌博提示信息
-- 余额归零强制结束
-
-## 📊 资金曲线分析
+## 📊 Fund Curve Analysis
 
 ```python
-# 资金曲线绘制逻辑
+# Fund curve drawing logic
 self.chart_ax.plot(self.balance_history, marker='o', color='red')
-self.chart_ax.set_title('资金变化曲线')
-self.chart_ax.set_xlabel('下注次数')
-self.chart_ax.set_ylabel('余额（元）')
+self.chart_ax.set_title('Fund Change Curve')
+self.chart_ax.set_xlabel('Number of Bets')
+self.chart_ax.set_ylabel('Balance (Yuan)')
 ```
 
-**图表特性**：
-- 实时更新折线图
-- 标记每次下注点
-- 红色警示色系
-- 网格辅助线
+**Chart Features**:
+- Real-time line chart updates
+- Marking each betting point
+- Red warning color scheme
+- Grid auxiliary lines
 
-## ⚠️ 退出警示
+## ⚠️ Exit Warning
 
 ```python
-# 退出提示逻辑
-messagebox.showinfo('游戏结束', 
-    '老板把你打了一顿，拿走了你剩下的所有时间！\n\n'
-    '重要提示：十赌九输，久赌必输，远离赌博！')
+# Exit prompt logic
+messagebox.showinfo('Game Over', 
+    'The boss beat you up and took all your remaining time!\n\n'
+    'Important Reminder: Nine out of ten gamblers lose; long-term gambling guarantees loss. Stay away from gambling!')
 ```
 
-## 🛠️ 技术实现
+## 🛠️ Technical Implementation
 
-### 主要组件
-- **GUI框架**：Tkinter
-- **数据可视化**：Matplotlib
-- **交互提示**：Messagebox
-- **随机算法**：Python random
+### Main Components
+- **GUI Framework**: Tkinter
+- **Data Visualization**: Matplotlib
+- **Interaction Prompts**: Messagebox
+- **Random Algorithm**: Python random
 
-### 核心类方法
-- `quit_game()` - 处理退出逻辑
-- `show_balance_chart()` - 初始化资金曲线
-- `update_balance_chart()` - 刷新图表数据
+### Core Class Methods
+- `quit_game()` - Handles exit logic
+- `show_balance_chart()` - Initializes fund curve
+- `update_balance_chart()` - Refreshes chart data
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
 ```bash
 pip install matplotlib numpy
 python main.py
 ```
 
-## 📌 使用说明
+## 📌 Usage Instructions
 
-1. 启动后显示赌博模拟界面
-2. 每次下注更新资金余额
-3. 查看实时资金变化曲线
-4. 退出时显示警示信息
+1. Launch to display the gambling simulation interface
+2. Update fund balance with each bet
+3. View real-time fund change curve
+4. Display warning information upon exit
 
-## 💡 设计目的
+## 💡 Design Purpose
 
-通过模拟赌博的资金变化过程：
-- 直观展示"久赌必输"的数学规律
-- 用数据可视化揭示赌博风险
-- 强化"远离赌博"的警示作用
-
-## 📄 开源协议
-[MIT License](LICENSE)
-
+By simulating the fund change process of gambling:
+- Intuitively demonstrate the mathematical law of "long-term gambling leads to inevitable losses"
+- Reveal gambling risks using data visualization
+- Reinforce the warning effect of "stay away from gambling"
 ---
 
-⭐ **请勿用于真实赌博**  
-⚠️ 本程序仅用于教育警示目的
+⭐ **Do not use for real gambling**  
+⚠️ This program is for educational warning purposes only
